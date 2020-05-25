@@ -1,5 +1,5 @@
 /* stuff here */
-  
+
 
 /*--------Structure---------*/
 
@@ -27,6 +27,7 @@ img {
   padding-top: 30px;
   width: 580px;
 }
+
 
 
 /*-------- Logo --------*/
@@ -58,12 +59,6 @@ h2 {
   font-family: 'Times New Roman', serif;
   font-size: 30px;
   padding-bottom: 30px;
-}
-
-h3 {
-  color: black;
-  font-family: 'Times New Roman', serif;
-  font-size: 25px;
 }
 
 p, li {
