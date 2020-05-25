@@ -1,1 +1,100 @@
 /* stuff here */
+
+
+/*--------Structure---------*/
+
+body {
+  margin: 0;
+  background-color: #DCDDD9;
+}
+
+header {
+  height: 140px;
+  background-color: #38393A; 
+}
+
+footer {
+  height: 86px;
+  background-color: #38393A;
+}
+
+.wrapper {
+  width: 580px;
+  margin: auto;
+}
+
+img {
+  padding-top: 30px;
+  width: 580px;
+}
+
+
+
+/*-------- Logo --------*/
+
+header h1 {
+  font-family: Trebuchet, serif;
+  color: #e3e1dc;
+  margin: 0px;
+  padding-top: 24px;
+  font-size: 48px;
+  text-align: center;
+}
+
+header h2 {
+  font-family: Trebuchet, serif;
+  color: #e3e1dc;
+  margin: 0px;
+  padding-top: 16px;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+
+/*-------- Type --------*/
+
+h2 {
+  color: black;
+  font-family: 'Times New Roman', serif;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+p, li {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+article { 
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:link { color: #3C7A89; }
+a:visited { color: #2E4756; }
+a:hover { color: #16262E; }
+a:active { color: ; }
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: #e3e1dc;
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+/*--------Elements--------*/
+
+hr { border: 1px solid #707573;}
+
+
