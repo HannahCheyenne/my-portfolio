@@ -61,6 +61,12 @@ h2 {
   padding-bottom: 30px;
 }
 
+h3 {
+  color: black;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+}
+
 p, li {
   color: black;
   font-family: Arial, sans-serif;
