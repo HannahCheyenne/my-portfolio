@@ -1,100 +1,143 @@
-/* stuff here */
-
-
-/*--------Structure---------*/
-
-body {
-  margin: 0;
-  background-color: #DCDDD9;
-}
+/* General Styles */
 
 header {
-  height: 140px;
-  background-color: #38393A; 
+    background-color: peachpuff;
+    margin-bottom: 40px;
 }
 
 footer {
-  height: 86px;
-  background-color: #38393A;
+    height: 100px;
+    background-color: peachpuff;
+
 }
 
 .wrapper {
-  width: 580px;
-  margin: auto;
+    width: 1000px;
+    margin: auto;
 }
 
 img {
-  padding-top: 30px;
-  width: 580px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
+/* Header */
 
+header nav {
+    display: flex;
+    justify-content: center;
+}
 
-/*-------- Logo --------*/
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-family: 'Trebuchet MS', serif;
+    color: grey;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 20px 0 0;
+}
 
 header h1 {
-  font-family: Trebuchet, serif;
-  color: #e3e1dc;
-  margin: 0px;
-  padding-top: 24px;
-  font-size: 48px;
-  text-align: center;
+    font-family: 'Trebuchet MS', serif;
+    color: grey;
+    margin: 0px;
+    font-size: 64px;
+    text-align: center;
 }
 
 header h2 {
-  font-family: Trebuchet, serif;
-  color: #e3e1dc;
-  margin: 0px;
-  padding-top: 16px;
-  font-size: 22px;
-  text-align: center;
+    font-family: 'Trebuchet MS', serif;
+    color: grey;
+    padding-top: 20px;
+    margin: 0px;
+    font-size: 34px;
+    text-align: center;
 }
 
-
-
-/*-------- Type --------*/
+/* Main */
 
 h2 {
-  color: black;
-  font-family: 'Times New Roman', serif;
-  font-size: 30px;
-  padding-bottom: 30px;
+    color: slategray;
+    font-family: 'Noto Serif', serif;
+    font-size: 38px;
 }
 
 p, li {
-  color: black;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+    color: slategray;
+    font-size: 20px;
 }
 
-article { 
-  padding-top: 60px;
-  padding-bottom: 60px;
+p a {
+    text-decoration: none;
 }
 
-a {
-  font-weight: 600;
-  text-decoration: none;
+ol li a {
+    text-decoration: none;
 }
 
-a:link { color: #3C7A89; }
-a:visited { color: #2E4756; }
-a:hover { color: #16262E; }
-a:active { color: ; }
+/* Groups & Items (Mobile First) */
 
-a:hover {
-  text-decoration: underline;
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.item {
+    flex: 1;
+    margin: 10px;
 }
 
-footer p {
-  color: #e3e1dc;
-  text-align: center;
-  padding-top: 40px;
+.item-double {
+    flex: 2;
+    margin: 10px;
 }
 
 
-/*--------Elements--------*/
+/* Groups & Items (Desktop) */
 
-hr { border: 1px solid #707573;}
+@media all and (min-width: 600px) {
 
+    .group {
+        flex-direction: row;
+    }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px; 
+    }
+
+    header h1 {
+        margin: 14px 0;
+        padding-top: 0;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header nav ul li a:hover {
+        color: slategrey;
+    }
+
+}
+
+/* ARTICLE SECTIONS */
+
+#portfolio, #contact {
+    margin-bottom: 120px;
+}
+
+/* ABOUT ARTICLE (IF COLOR BACKGROUND)*/
+
+#about {
+    background-color: peachpuff;
+    padding: 20px 50px 30px 50px;
+    margin: 120px 0;
+}

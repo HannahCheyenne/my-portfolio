@@ -1,76 +1,118 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Hannah Hart : Software Developer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<html lang="en">
 
-  <body>
-    <!--heading-->
+<head>
+    <title>Hannah Hart: Software Developer</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
     <header>
-      <section>
-        <h1>Hannah</h1>
+        <h1>Hannah Hart</h1>
         <h2>Software Developer</h2>
-      </section>
+		<nav>
+			<ul id="menu">
+				<li><a href="#menu">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
     </header>
 
-    <main class= "wrapper">
-      <section>
-        <img src="images/plant-in-jar.jpg" alt= "plant in jar">
-      </section>
-      <!--introduction-->
-      
-      <article>
-        <!--who you are, where are you located, what makes you special-->
-        <h2>Hello,</h2>
-        <p>My name is Hannah and I am a software developer living in Dallas, Texas.</p>
-        
-        <p>My goals:</p>
-        <ul>
-          <li>Gain skills as a developer</li>
-          <li>Collaborate and network</li>
-          <li>Start a career I love</li>
-        </ul>
+    <main class="wrapper">
 
-        <p>Please look at my website and feel welcome to <a href= "#contact">contact me</a>!</p>
-      </article>
+        <section>
+            <img src="images/plant-in-jar.jpg" alt="plant in jar">
+        </section>
 
-      <hr>
-      <!--About me-->
-      <article>
-      <!--description demonstrating passion for dev and your willingness to work with others 1-2 sentences describes other interests you have outside of development-->
-        <h2>About Me</h2>
+        <!-- Intro-->
+        <!-- 1. Who you are 2. Where you are 3. What do you do and what makes you special-->
+        <article id="intro">
+            <div class="group">
+                <div class="item">
+                    <h2>Hello,</h2>
+                    <p>My name is Hannah Hart and I am a software developer living in Dallas, Texas</p>
+                    <p>My Goals:</p>
+                    <ul>
+                        <li>Gain skills as a developer</li>
+                        <li>Collaborate and network</li>
+                        <li>Start a career I love</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <hr>
 
-        <p>My first experience with coding was customizing my MySpace profile page back in 7th grade. I started studying computer engineering in 2018 and realized that software engineering was so invigorating and rewarding. I am so excited to start my studies at Thinkful!</p>
+        <!--About Me-->
+        <!-- 1. Demonstrate your passion for the web 2. Demonstrate desire to work on a team with great programmers 
+            3. Show your personality outside of coding 4. List of services you can (or want to) provide a client.-->
+        <article id="about">
+            <div class="group">
+                <div class="item">
+                    <h2>About Me</h2>
+                    <p>My first experience with coding was customizing my MySpace profile page back in 7th grade.
+                        I started studying computer engineering in 2018 and realized that software engineering
+                        was so invigorating and rewarding. I am so excited to start my studies at Thinkful!</p>
 
-        <p>If you are looking to mentor or hire a new developer please reach out! I'm excited to collaborate with others on projects and grow!</p>
+                    <p>If you are looking to mentor or hire a new developer please reach out! I'm excited to
+                        collaborate with others on projects and grow!</p>
 
-        <p>I am gamer, a streamer, and a cosplayer. If you're interested in checking out my shenanigans head on over to <a href= "https://twitch.tv/yarimizu"> my channel</a>!</p>
-      </article>
-      <hr>
+                    <p>I am gamer, a streamer, and a cosplayer. If you're interested in checking out my
+                        shenanigans head on over to <a href="https://twitch.tv/yarimizu"> my channel</a>!</p>
 
-      <article>
-        <!--Contact Me-->
-        <h2 id="contact">Contact Me</h2>
-          <!--linkedIn, GitHub, email(optional)-->
-          <p>Please feel free to contact or follow me at: </p>
-          <ol>
-            <li><a href= "<!--https://www.linkedin.com/in/hannah-hart-thinkful-->#/"> LinkedIn</a></li>
-            <li><a href= "https://github.com/HannahCheyenne"> GitHub</a></li>
-          </ol>
-      </article>
+                </div>
+            </div>
+        </article>
+        <hr>
 
+        <!-- Project Section -->
+        <!-- 1. title of project 2. description of project 3. link to project (use placeholders)-->
+        <!-- sample project listing, title of project, what does app do, who it's for, why you built it (skills used, link to githubrepo of project, link to live working app)-->
+        <article id="portfolio">
+            <div class="group">
+                <div class="item">
+                    <h2>Hannah's Work</h2>
+                    <p>piddly squat lmao</p>
+
+                </div>
+            </div>
+        </article>
+        <hr>
+
+
+        <!-- Contact -->
+        <article id="contact">
+            <div class="group">
+                <div class="item">
+                    <h2>Contact Me</h2>
+                    <!--linkedIn, GitHub, email(optional)-->
+                    <p>Please feel free to contact or follow me at: </p>
+                    <ol>
+                        <li><a href="https://www.linkedin.com/in/hannah-hart-thinkful/"> LinkedIn</a></li>
+                        <li><a href="https://github.com/HannahCheyenne"> GitHub</a></li>
+                    </ol>
+                </div>
+            </div>
+        </article>
     </main>
 
     <footer>
-      <!--copyright info-->
-      <div class= "wrapper">
-        <p>Image from Sarah Dorweiler on UnSplash</p>
-      </div>
+        <!--copyright info-->
+        <div class="wrapper">
+            <p>Images from Sarah Dorweiler on Unsplash</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
-  </body>
+    <script src="script.js">
+    </script>
+</body>
+
 </html>
