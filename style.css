@@ -82,6 +82,26 @@ ul {
     list-style: none;
 }
 
+
+
+/* CONTACT FORM DESIGN */
+
+form {
+    padding-right: 6px;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 160px;
+}
+
+
+
+
 /* Groups & Items (Mobile First) */
 
 .group {
@@ -91,7 +111,12 @@ ul {
 
 .item {
     flex: 1;
-    margin: 60px;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+    margin: 10px;
 }
 
 hr {
@@ -99,6 +124,9 @@ hr {
 }
 
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 400px;
 }
 
@@ -129,16 +157,12 @@ img {
     .group {
         display: flex;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
         /*margin: 0 50px 50px 10px;*/
     }
 
     .item {
         display: flex;
         flex-direction: column;
-        width: 1000px;
-        text-align: ;
     }
 
     hr {
