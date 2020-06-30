@@ -8,18 +8,9 @@ header {
 footer {
     height: 100px;
     background-color: peachpuff;
-
-}
-
-.wrapper {
-    width: 1000px;
-    margin: auto;
-}
-
-img {
-    width: 100%;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
 }
 
 /* Header */
@@ -36,23 +27,28 @@ header nav ul {
 }
 
 header nav ul li a {
-    font-family: 'Trebuchet MS', serif;
+    font-family: 'Noto Serif', serif;
     color: grey;
     text-decoration: none;
     font-size: 25px;
     margin: 0 20px 0 0;
 }
 
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
 header h1 {
-    font-family: 'Trebuchet MS', serif;
+    font-family: 'Noto Serif', serif;
     color: grey;
     margin: 0px;
+    padding-top: 20px;
     font-size: 64px;
     text-align: center;
 }
 
 header h2 {
-    font-family: 'Trebuchet MS', serif;
+    font-family: 'Noto Serif', serif;
     color: grey;
     padding-top: 20px;
     margin: 0px;
@@ -64,21 +60,26 @@ header h2 {
 
 h2 {
     color: slategray;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Trebuchet MS', serif;
     font-size: 38px;
 }
 
 p, li {
     color: slategray;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 p a {
     text-decoration: none;
 }
 
-ol li a {
+ul li a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 /* Groups & Items (Mobile First) */
@@ -86,26 +87,25 @@ ol li a {
 .group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-}
-.item {
-    flex: 1;
-    margin: 10px;
 }
 
-.item-double {
-    flex: 2;
-    margin: 10px;
+.item {
+    flex: 1;
+    margin: 60px;
+}
+
+hr {
+    width: 400px;
+}
+
+img {
+    width: 400px;
 }
 
 
 /* Groups & Items (Desktop) */
 
 @media all and (min-width: 600px) {
-
-    .group {
-        flex-direction: row;
-    }
 
     header {
         display: flex;
@@ -124,6 +124,29 @@ ol li a {
 
     header nav ul li a:hover {
         color: slategrey;
+    }
+
+    .group {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        /*margin: 0 50px 50px 10px;*/
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        text-align: ;
+    }
+
+    hr {
+        width: 1000px;
+    }
+
+    img {
+        width: 1000px;
     }
 
 }
