@@ -106,27 +106,31 @@ form textarea {
 
 .group {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    background-color: peachpuff;
+    margin: 0 auto 120px auto;
+    width: 90%;
+    border-radius: 20px;
 }
 
 .item {
-    flex: 1;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px 30px 50px;
 }
 
-.item-double {
-    flex: 2;
-    margin: 10px;
-}
 
 hr {
     width: 400px;
+    margin-bottom: 120px;
 }
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 120px;
     width: 400px;
 }
 
@@ -156,17 +160,22 @@ img {
 
     .group {
         display: flex;
-        justify-content: center;
-        /*margin: 0 50px 50px 10px;*/
+        background-color: peachpuff;
+        margin: 0 auto 120px auto;
+        width: 50%;
+        border-radius: 20px;
     }
 
     .item {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding: 20px 100px 30px 100px;
     }
 
     hr {
         width: 1000px;
+        margin-bottom: 120px;
     }
 
     img {
@@ -176,15 +185,3 @@ img {
 }
 
 /* ARTICLE SECTIONS */
-
-#portfolio, #contact {
-    margin-bottom: 120px;
-}
-
-/* ABOUT ARTICLE (IF COLOR BACKGROUND)*/
-
-#about {
-    background-color: peachpuff;
-    padding: 20px 50px 30px 50px;
-    margin: 120px 0;
-}
