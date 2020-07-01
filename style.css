@@ -1,5 +1,9 @@
 /* General Styles */
 
+.bg-color {
+    background-color: whitesmoke;
+}
+
 header {
     background-color: peachpuff;
     margin-bottom: 40px;
@@ -15,58 +19,71 @@ footer {
 
 /* Header */
 
-header nav {
-    display: flex;
-    justify-content: center;
+.hero-image {
+
+    /*Position and center the image to scale nicely on all screens*/
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-header nav ul {
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-family: 'Major Mono Display', monospace;
+    color: lightgray;
+    font-size: 28px;
+}
+
+.hero-text h2 {
+    font-family: 'Major Mono Display', monospace;
+    color: lightgray;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+nav ul {
     display: flex;
     padding-left: 0;
     list-style: none;
 }
 
-header nav ul li a {
-    font-family: 'Noto Serif', serif;
+nav ul li a {
+    font-family: 'Major Mono Display', monospace;
     color: grey;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     margin: 0 20px 0 0;
-}
-
-header nav ul li:last-child a {
-    margin-right: 0;
-}
-
-header h1 {
-    font-family: 'Noto Serif', serif;
-    color: grey;
-    margin: 0px;
-    padding-top: 20px;
-    font-size: 64px;
-    text-align: center;
-}
-
-header h2 {
-    font-family: 'Noto Serif', serif;
-    color: grey;
-    padding-top: 20px;
-    margin: 0px;
-    font-size: 34px;
-    text-align: center;
 }
 
 /* Main */
 
 h2 {
     color: slategray;
-    font-family: 'Trebuchet MS', serif;
-    font-size: 38px;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 26px;
+}
+
+h3 {
+    color: slategray;
+    font-family: 'Major Mono Display', monospace;
+    text-decoration: underline;
 }
 
 p, li {
     color: slategray;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -80,6 +97,49 @@ ul li a {
 
 ul {
     list-style: none;
+}
+
+
+/* PROJECT CARD DESIGN*/
+
+.row {
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+    color: slategray;
+}
+
+.container {
+    /* left and right padding inside the container */
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    /* clear floats */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#myBtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+#myBtn:hover {
+    background-color: #555;
 }
 
 
@@ -99,6 +159,28 @@ form textarea {
     height: 160px;
 }
 
+label {
+    font-family: 'Roboto', sans-serif;
+    color: slategray;
+    font-size: 18px;
+}
+
+form button {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+}
+
+form button:hover {
+    background-color: #555;
+}
 
 
 
@@ -120,7 +202,6 @@ form textarea {
     padding: 20px 50px 30px 50px;
 }
 
-
 hr {
     width: 400px;
     margin-bottom: 120px;
@@ -128,42 +209,51 @@ hr {
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 120px;
-    width: 400px;
+    width: 100%;
 }
 
+.column {
+    width: 90%;
+    display: block;
+    margin-bottom: 16px;
+    padding-left: 22px;
+}
+
+@media all and (min-width: 768px) and (max-width:999px) {
+    hr {
+        width: 700px;
+        margin-bottom: 120px;
+    }
+}
 
 /* Groups & Items (Desktop) */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 1000px) {
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 30px; 
+    nav ul li a {
+        font-size: 28px;
     }
 
-    header h1 {
-        margin: 14px 0;
-        padding-top: 0;
-    }
-
-    header nav {
-        margin-top: 8px;
-    }
-
-    header nav ul li a:hover {
-        color: slategrey;
+    nav ul li a:hover {
+        color: darkgray;
     }
 
     .group {
         display: flex;
         background-color: peachpuff;
         margin: 0 auto 120px auto;
-        width: 50%;
+        width: 70%;
         border-radius: 20px;
+    }
+
+    .hero-text h1 {
+        color: lightgray;
+        font-size: 64px;
+    }
+
+    .hero-text h2 {
+        color: lightgray;
+        font-size: 34px;
     }
 
     .item {
@@ -178,10 +268,21 @@ img {
         margin-bottom: 120px;
     }
 
-    img {
-        width: 1000px;
+    h2 {
+        color: slategray;
+        font-size: 38px;
+    }
+    
+    p, li {
+        color: slategray;
+        font-size: 20px;
+    }
+
+    .column {
+        float: left;
+        width: 30%;
+        margin-bottom: 16px;
+        padding-left: 33px;
     }
 
 }
-
-/* ARTICLE SECTIONS */

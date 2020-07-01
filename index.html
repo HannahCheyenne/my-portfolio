@@ -7,40 +7,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
-        type="text/css" />
-
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+ 
 </head>
 
 <body>
-    <header>
-        <h1>Hannah Hart</h1>
-        <h2>Software Developer</h2>
-		<nav>
-			<ul id="menu">
-				<li><a href="#menu">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-    </header>
 
-    <main class>
+    <main class="bg-color">
+        <div class="hero-image">
+            <img id="image" src="images/fern-leaves.jpeg">
+            <div class="hero-text">
+                <h1>hannah hart</h1>
+                <h2>software engineer</h2>
+            </div>
+        </div>
 
-        <section>
-            <img src="images/plant-in-jar.jpg" alt="plant in jar">
-        </section>
+        <div id="container-nav">
+            <nav>
+                <ul>
+                    <li><a href="#container-nav">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
 
         <!-- Intro-->
         <!-- 1. Who you are 2. Where you are 3. What do you do and what makes you special-->
         <article id="intro">
             <div class="group">
                 <div class="item">
-                    <h2>Hello,</h2>
+                    <h2>hello,</h2>
                     <p>My name is Hannah Hart and I am a software developer living in Dallas, Texas</p>
                     <p>My Goals:</p>
                     <ul>
@@ -51,7 +57,12 @@
                 </div>
             </div>
         </article>
+
+
+
         <hr>
+
+
 
         <!--About Me-->
         <!-- 1. Demonstrate your passion for the web 2. Demonstrate desire to work on a team with great programmers 
@@ -59,7 +70,7 @@
         <article id="about">
             <div class="group">
                 <div class="item">
-                    <h2>About Me</h2>
+                    <h2>about me</h2>
                     <p>My first experience with coding was customizing my MySpace profile page back in 7th grade.
                         I started studying computer engineering in 2018 and realized that software engineering
                         was so invigorating and rewarding. I am so excited to start my studies at Thinkful!</p>
@@ -73,20 +84,67 @@
                 </div>
             </div>
         </article>
+
+
+
         <hr>
+
 
         <!-- Project Section -->
         <!-- 1. title of project 2. description of project 3. link to project (use placeholders)-->
         <!-- sample project listing, title of project, what does app do, who it's for, why you built it (skills used, link to githubrepo of project, link to live working app)-->
         <article id="portfolio">
             <div class="group">
-                <div class="item">
-                    <h2>Hannah's Work</h2>
-                    <p>piddly squat lmao</p>
-
+                <div class="row">
+                        <div class="item">
+                            <h2>hannah's work</h2>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="" alt="" style="width: 100%">
+                                <div class="container">
+                                    <h3>project 1</h3>                                    
+                                    <p> Description goes here: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                        mollit anim id est laborum." </p>
+                                        <p><button onclick="topFunction()" id="myBtn" title="Go to top">View</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="" alt="" style="width: 100%">
+                                <div class="container">
+                                    <h3>project 2</h3>
+                                    <p> Description goes here: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                        mollit anim id est laborum." </p>
+                                        <p><button onclick="topFunction()" id="myBtn" title="Go to top">View</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="" alt="" style="width: 100%">
+                                <div class="container">
+                                    <h3>project 3</h3>
+                                    <p> Description goes here: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                        mollit anim id est laborum." </p>
+                                        <p><button onclick="topFunction()" id="myBtn" title="Go to top">View</button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
+
+
+
         <hr>
 
 
@@ -94,7 +152,7 @@
         <article id="contact">
             <div class="group">
                 <div class="item">
-                    <h2>Contact Me</h2>
+                    <h2>contact me</h2>
                     <!--linkedIn, GitHub, email(optional)-->
                     <p>Please feel free to follow me at the links below or send me an email using the contact form below:</p>
                     <ul>
