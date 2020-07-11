@@ -1,7 +1,8 @@
 /* General Styles */
 
 .bg-color {
-    background-color: whitesmoke;
+    background-color: whitesmoke;  
+    overflow: hidden;
 }
 
 header {
@@ -38,32 +39,34 @@ footer {
 .hero-text h1 {
     font-family: 'Major Mono Display', monospace;
     color: lightgray;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .hero-text h2 {
     font-family: 'Major Mono Display', monospace;
     color: lightgray;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 120px;
+#container-nav {
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     font-family: 'Major Mono Display', monospace;
     color: grey;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 20px 0 0;
 }
 
@@ -72,7 +75,7 @@ nav ul li a {
 h2 {
     color: slategray;
     font-family: 'Major Mono Display', monospace;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 h3 {
@@ -104,6 +107,7 @@ ul {
 
 .row {
     margin-bottom: 20px;
+    padding-right: 20px;
 }
 
 .card {
@@ -126,19 +130,19 @@ ul {
     display: table;
 }
 
-#myBtn {
+#myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
     border: none;
     outline: 0;
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: slategrey;
     text-align: center;
     cursor: pointer;
     width: 100%;
 }
 
-#myBtn:hover {
+#myBtn:hover, #myBtn2:hover, #myBtn3:hover, #myBtn4:hover, #myBtn5:hover, #myBtn6:hover {
     background-color: #555;
 }
 
@@ -172,10 +176,10 @@ form button {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: slategray;
     text-align: center;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
 }
 
 form button:hover {
@@ -186,103 +190,196 @@ form button:hover {
 
 /* Groups & Items (Mobile First) */
 
+@media all and (max-width: 320px) {
+    .hero-text h1 {
+        font-size: 19px;
+    }
+    .hero-text h2 {
+        font-size: 12px;
+    }
+    nav {
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    nav ul {
+        padding-left: 13px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    p, li {
+        font-size: 13px;
+    }
+    ul {
+        padding-left: 16px;
+    }
+    .container h3 {
+        font-size: 14px;
+    }
+    label {
+        font-size: 13px;
+    }
+} 
+
+
+
 .group {
     display: flex;
     flex-direction: column; 
     background-color: peachpuff;
-    margin: 0 auto 120px auto;
+    margin: 20px auto 60px auto;
     width: 90%;
     border-radius: 20px;
 }
-
 .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px 50px 30px 50px;
 }
-
 hr {
-    width: 400px;
-    margin-bottom: 120px;
+    width: 200px;
+    margin-bottom: 60px;
 }
-
 img {
     display: block;
     width: 100%;
 }
-
 .column {
     width: 90%;
     display: block;
     margin-bottom: 16px;
-    padding-left: 22px;
+    padding-left: 40px;
 }
 
-@media all and (min-width: 768px) and (max-width:999px) {
+@media all and (min-width: 768px) and (max-width:1000px) {
     hr {
         width: 700px;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
     }
+    nav {
+        margin-top: 40px;
+        margin-bottom: 90px;
+    }
+    .group {
+        margin-bottom: 100px;
+    }
+    .hero-text h1 {
+        font-size: 45px;
+    }
+    .hero-text h2 {
+        font-size: 25px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p, li {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 21px;
+    }
+    .column {
+        padding-left: 50px;
+    }
+    label {
+        font-size: 20px;
+    }
+    form input, form textarea {
+        margin-top: 5px;
+    }
+    form input {
+        width: 50%;
+    }
+    form button {
+        width: 50%;
+    }
+    .button-wrapper {
+        text-align: center;
+    }
+    #myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
+        width: 50%;
+    }
+    
 }
 
 /* Groups & Items (Desktop) */
 
+
 @media all and (min-width: 1000px) {
 
+    nav {
+        margin-top: 90px;
+        margin-bottom: 250px;
+    }
     nav ul li a {
         font-size: 28px;
     }
-
     nav ul li a:hover {
         color: darkgray;
     }
-
     .group {
         display: flex;
         background-color: peachpuff;
-        margin: 0 auto 120px auto;
-        width: 70%;
+        margin: 0 auto 250px auto;
+        width: 80%;
         border-radius: 20px;
     }
-
     .hero-text h1 {
         color: lightgray;
         font-size: 64px;
     }
-
     .hero-text h2 {
         color: lightgray;
         font-size: 34px;
     }
-
     .item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 20px 100px 30px 100px;
     }
-
     hr {
         width: 1000px;
-        margin-bottom: 120px;
+        margin-bottom: 250px;
     }
-
     h2 {
         color: slategray;
         font-size: 38px;
     }
-    
+    h3 {
+        font-size: 25px;
+    }
     p, li {
         color: slategray;
-        font-size: 20px;
+        font-size: 22px;
     }
-
+    label {
+        font-size: 24px;
+    }
+    form input, form textarea {
+        margin-top: 7px;
+    }
+    form input {
+        width: 50%;
+    }
+    form button {
+        width: 50%;
+    }
+    .button-wrapper {
+        text-align: center;
+    }
     .column {
         float: left;
         width: 30%;
         margin-bottom: 16px;
-        padding-left: 33px;
+        padding-left: 40px;
     }
 
 }
