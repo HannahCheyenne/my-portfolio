@@ -187,9 +187,6 @@ ul {
         font-size: 13px;
     }
 } 
-
-
-
 .group {
     display: flex;
     flex-direction: column; 
@@ -214,9 +211,11 @@ img {
 }
 .column {
     width: 90%;
-    display: block;
     margin-bottom: 16px;
-    padding-left: 40px;
+    padding-left: 25px;
+}
+.button-wrapper {
+    text-align: center;
 }
 
 @media all and (min-width: 768px) {
@@ -267,8 +266,13 @@ img {
 
 /* Groups & Items (Desktop) */
 
+@media all and (min-width: 1100px) {
+    .group {
+        width: 65%;
+    }
+}
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1877px) {
 
     nav {
         margin-top: 90px;
@@ -281,10 +285,7 @@ img {
         color: darkgray;
     }
     .group {
-        display: flex;
-        background-color: peachpuff;
         margin: 0 auto 250px auto;
-        width: 80%;
         border-radius: 20px;
     }
     .hero-text h1 {
